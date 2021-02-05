@@ -1,29 +1,63 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Lab</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <link rel="stylesheet" href="styles.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
+    <input type="submit" value="Send my Order">
+        <table style="width:300px">
+            <tr>
+                <th colspan="2">Pizz Shop 2.0</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></input></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td> <input type="radio" name="topping" value="supreme">Supreme</input> <br>
+                    <input type="radio" name="topping" value="vegetarian">Vegetarian</input> <br>
+                    <input type="radio" name="topping" value="hawaiian">Hawaiian</input></td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td><select name="sauce">
+                    <option value="tomato">Tomato</option>
+                    <option value="barbeque">Barbeque</option>
+                    <option value="mayonnaise">Mayonnaise</option>
+                    <option value="secret">Secret Sauce</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td>Option Extras</td>
+                <td><input type="checkbox" name="extra_cheese" value="1">Extra Cheese</input>
+                    <input type="checkbox" name="gluten_free" value="1">Gluten Free Base</input></td>
+            </tr>
+            <tr>
+                <td colspan="2">Delivery Instructions: <br>
+                    <textarea name="delivery" cols="75" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Send my Order"></td>
 
-  <div id="tabs">
-    <ul>
-      <li><a href="index.html"><span>Home</span></a></li>
-      <li><a href="profile.html"><span>Profile</span></a></li>
-      <li><a href="friend.html"><span>Friend</span></a></li>
-    </ul>
-  </div>
+            </tr>
 
-  <div class="center">
-    <img src="hqdefault.jpg" alt="">
-    <h1>Motto Hello World</h1>
-
-  </div>
-
+        </table>
+    </form>
 </body>
 
 </html>
